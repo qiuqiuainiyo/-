@@ -4,155 +4,74 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>百度</title>
-    <style type="text/css">
-      body {
-        margin: 0px;
-        padding: 0px;
-        background-image: linear-gradient(to right, #f76300, rgb(31, 31, 161));
-      }
-      .news {
-        width: 360px;
-        margin: 50px auto 0px;
-        border: 1px solid #ddd;
-        padding: 15px;
-      }
-      .news h3 {
-        font-size: 20px;
-        margin-bottom: 20px;
-      }
-      .news ul {
-        list-style: none;
-      }
-      .news ul li {
-        border-bottom: 1px dotted #ddd;
-        height: 35px;
-        line-height: 35px;
-        font-size: 15px;
-      }
-      .news ul li a {
-        color: #333;
-        text-decoration: none;
-      }
-      .news ul li a:hover {
-        color: rgb(209, 20, 136);
-      }
-      .news ul li a span {
-        margin-right: 10px;
-        font-weight: bold;
-      }
-      .col1 {
-        color: red;
-      }
-      .col2 {
-        color: #ff5c55;
-      }
-      .col3 {
-        color: #ffa552;
-      }
-      ul {
-        list-style: none;
+    <title>love</title>
+    <style>
+      * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
       }
-      a {
-        text-decoration: none;
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        width: 100%;
+        background-color: #ffe4c4;
       }
-      .menu {
-        width: 300px;
-        margin: 10px auto 0px;
-        border: 1px solid #ddd;
+      .box {
+        position: relative;
+        width: 200px;
+        height: auto;
       }
-      .menu ul {
-        padding: 20px 0px;
+      .box .love {
+        width: 200px;
+        height: 200px;
+        background-color: #f00;
+        border-radius: 10px;
+        box-shadow: #333 10px 10px 15px;
+        transform: rotate(45deg) scale(0.9);
+        animation: love_you 1s linear infinite;
       }
-      .menu ul li {
-        height: 42px;
-        line-height: 42px;
+      .box .love::before,
+      .box .love::after {
+        content: "";
+        width: 200px;
+        height: 200px;
+        background-color: #f00;
+        border-radius: 50%;
       }
-      .menu ul li a {
-        display: block;
-
-        text-indent: 2em;
-        color: #000;
-        background-repeat: no-repeat;
-        background-position: 250px 3px;
-        background: url("D:/jianbain/jiantou.png") no-repeat 250px;
+      .box .love::before {
+        position: absolute;
+        top: -50%;
       }
-      .menu ul li a:hover {
-        background-color: #ff7600;
-        color: #fff;
+      .box .love::after {
+        position: absolute;
+        left: -50%;
+      }
+      @keyframes love_you {
+        form {
+          transform: rotate(45deg) scale(0.9);
+        }
+        to {
+          transform: scale(1) rotate(45deg);
+        }
+      }
+      .box span {
+        position: absolute;
+        top: 300px;
+      }
+      .box a {
+        position: absolute;
+        width: 500px;
+        color: rgb(106, 21, 185);
       }
     </style>
   </head>
   <body>
-    <div class="news">
-      <h3>百度新闻热榜</h3>
-      <ul>
-        <li>
-          <a href=""><span class="col1">1</span>全国人大会第二次全体会议？</a>
-        </li>
-        <li>
-          <a href=""
-            ><span class="col2">2</span>美官员承认美国在乌生物实验室有料</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://gushitong.baidu.com/stock/hk-03690?mainTab=%E8%B4%A2%E5%8A%A1&sheet=%E5%88%A9%E6%B6%A6%E5%88%86%E9%85%8D%E8%A1%A8 "target="_blank“
-            ><span class="col3">3</span>美团2022年最新财报显示盈利123亿</a
-          >
-        </li>
-        <li>
-          <a href=""><span>4</span>建议独生子女父母退休金上调10-20%新</a>
-        </li>
-        <li>
-          <a href=""><span>5</span>昨日新增本土确诊233例，无症状感染者322例</a>
-        </li>
-        <li>
-          <a href=""><span>6</span>陕西新增10例本土确诊病例</a>
-        </li>
-        <li>
-          <a href=""><span>7</span>新冠或致大脑萎缩 使人提前老10岁</a>
-        </li>
-        <li>
-          <a href=""><span>8</span>代表：45岁退休利于减少晚婚晚育</a>
-        </li>
-      </ul>
-    </div>
-    <div class="menu">
-      <ul>
-        <li>
-          <a
-            href="https://search.jd.com/Search?keyword=%E6%89%8B%E6%9C%BA&enc=utf-8&wq=%E6%89%8B%E6%9C%BA&pvid=8858151673f941e9b1a4d2c7214b2b52"
-            target="_blank"
-            >手机</a
-          >
-        </li>
-        <li>
-          <a href="https://phat.jd.com/10-571.html" target="_blank">电视</a>
-        </li>
-        <li>
-          <a href="https://diannao.jd.com/" target="_blank">笔记本 平板</a>
-        </li>
-        <li>
-          <a
-            href="https://search.jd.com/Search?keyword=%E7%94%9F%E6%B4%BB%E7%94%B5%E5%99%A8&enc=utf-8&wq=%E7%94%9F%E6%B4%BB%E7%94%B5%E5%99%A8&pvid=57408a931ea940a0aafc6588565499f8"
-            target="_blank"
-            >家电</a
-          >
-        </li>
-        <li>
-          <a href="https://phat.jd.com/10-272.html" target="_blank"
-            >出行 穿戴</a
-          >
-        </li>
-        <li><a href="" target="_blank">智能 路由器</a></li>
-        <li><a href="" target="_blank">电源 配件</a></li>
-        <li><a href="" target="_blank">健康 儿童</a></li>
-        <li><a href="" target="_blank">耳机 音响</a></li>
-        <li><a href="" target="_blank">生活 箱包</a></li>
-      </ul>
+    <div class="box">
+      <div class="love"></div>
+      <span>亲爱的夏老师！<a>邱邱想你了!</a></span>
     </div>
   </body>
 </html>
